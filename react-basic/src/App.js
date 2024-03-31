@@ -11,6 +11,16 @@ const List =[{
   age: 18,
   sex: 'female'
 }]
+
+const artcleType = 1;
+
+function getArtcleType() {
+  if(artcleType === 1){
+    return '1'
+  }else if(artcleType === 0){
+    return '0'
+  }
+}
 function App() {
   return (
     <div className="App">
@@ -36,6 +46,8 @@ function App() {
       { true && <p>this is p</p> }
       {/* 三元运算 */}
       { false ? <p>this is p</p> : <p>this is p2</p> }
+      {/* 调用函数不同渲染模板 */}
+      {getArtcleType()}
     </div>
   );
 }
