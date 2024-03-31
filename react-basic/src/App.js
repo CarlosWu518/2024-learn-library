@@ -32,6 +32,10 @@ function App() {
           })
         }
       </ul>
+      {/* 逻辑与 && */}
+      { true && <p>this is p</p> }
+      {/* 三元运算 */}
+      { false ? <p>this is p</p> : <p>this is p2</p> }
     </div>
   );
 }
