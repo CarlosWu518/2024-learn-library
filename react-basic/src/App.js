@@ -2,6 +2,15 @@ const count = 100;
 function getName() {
   return 'jack'
 }
+const List =[{
+  name: 'jack',
+  age: 18,
+  sex: 'male'
+},{
+  name: 'rose',
+  age: 18,
+  sex: 'female'
+}]
 function App() {
   return (
     <div className="App">
@@ -16,6 +25,13 @@ function App() {
       {new Date().getDate()}
       {/* 使用js对象 */}
       <div style={{color:'red'}}>this is div</div>
+      <ul>
+        {
+          List.map((item,index)=>{
+            return <li key={index}>{item.name}</li>
+          })
+        }
+      </ul>
     </div>
   );
 }
